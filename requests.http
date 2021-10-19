@@ -20,3 +20,11 @@ GET http://localhost:3000/songs/3
 ###
 #update date
 PATCH http://localhost:3000/songs/1
+Content-Type: application/json
+
+{
+  "title": "the 1",
+  "album": "folklord",
+  "year": "2021",
+  "artist": "taylor swift"
+}

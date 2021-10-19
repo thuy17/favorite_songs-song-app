@@ -21,6 +21,13 @@ class SongsController < ApplicationController
   end
 
   def update
+    song = Song.find_by(id: params[:id])
+    song.update(
+      title: params[:title],
+      album: params[:album],
+      artist: params[:artist],
+      year: params[:year]  
+    )
     render json: song.as_json
 
   end

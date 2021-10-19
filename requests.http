@@ -1,0 +1,22 @@
+#index, show all data
+GET http://localhost:3000/songs
+
+###
+#create, create additional song/songs
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+"title": "Babyshark",
+"album": "Pinkfong",
+"artist": "IDK",
+"year": "2015"
+}
+
+###
+#show, show data by params ID
+GET http://localhost:3000/songs/3
+
+###
+#update date
+PATCH http://localhost:3000/songs/1
